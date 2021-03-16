@@ -18,21 +18,24 @@
 - Show sizes+prices and colors on index.html
 
 ### Design
-
-Product: {
+```
+Product: { 
   id: int primary key,
   name: string
 }
-
+```
+```
 Size: {
   id: int primary key,
   product_id: int foreign key (Product.id)
   product_size: string,
   product_price: money
 }
-
+```
+```
 Color: {
   id: int primary key,
   product_id: int foreign key (Product.id)
   product_color: string
 }
+```
