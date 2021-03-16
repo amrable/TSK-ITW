@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+   
+    <div class="container"> 
+      <h1>Hello, Store!</h1>
+
+    <form action="/product" method="POST">
+      <div class="mb-3">
+        <label class="form-label">Product Name</label>
+        <input class="form-control" name="product_name">
+      </div>
+      <label class="form-label">Product Price in EGP</label>
+        
+      <div class="mb-3">
+        <label class="form-label">Product Price (Small)</label>
+        <input class="form-control" name="product_price_small" placeholder="leave it empty if not available">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Product Price (Medium)</label>
+        <input class="form-control" name="product_price_medium" placeholder="leave it empty if not available">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Product Price (Large)</label>
+        <input class="form-control" name="product_price_large" placeholder="leave it empty if not available">
+      </div>
+      
+      <label class="form-label">Product Color</label>
+      <div class="mb-3">
+        <label class="form-label">Enter the color names comma separated</label>
+        <input class="form-control" name="product_color">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  </body>
+</html>

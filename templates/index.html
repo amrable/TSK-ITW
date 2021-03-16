@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container"> 
+      <h1>Hello, Store!</h1>
+      <a class="btn btn-primary" href="/create" role="button">Enter new/update product</a>
+
+      {% for item in navigation %}
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{item.name}}</h5>
+            <!-- {% for c in item.colors %}
+              <h6 class="card-subtitle mb-2 text-muted">{{c}}</h6>
+            {% endfor %}
+            {% for elemetn in item.size %}
+              <h6 class="card-subtitle mb-2 text-muted">{{element.size}} for {{element.price}} </h6>
+            {% endfor %} -->
+          </div>
+        </div>  
+      {% endfor %}
+  
+  </div>
+
+  </body>
+</html>
